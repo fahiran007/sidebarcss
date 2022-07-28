@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  height: 50px;
+  background-color: rgb(3, 91, 3);
+  display: flex;
+  align-items: center;
+  position: sticky;
+}
+#icon{
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0.5rem;
+}
+
+#barbtn {
+  position: relative;
+  left: 0.5rem;
+  color: white;
+}
+.barbtns {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(222, 216, 216);
+  margin: 5px;
+  border-radius: 6px;
+}
+#sidebar {
+  background-color: orange;
+  height: 600px;
+  width: 17%;
+  position: absolute;
+  top: 50px;
+  left: -17%;
+  z-index: 5;
+}
+.sidebar-items{
+  padding: 10px 0 10px 5px;
+  border-top: 1px solid rgb(122, 119, 119);
+  font-size: 20px;
+  color: rgb(35, 35, 35);
+}
+@media screen and (max-width: 600px) {
+  #sidebar {
+    width: 50%;
+    left: -50%;
+  }
+}
+.close {
+  position: relative;
+  transform: translateX(0);
+  transition: transform 0.05s ease-in-out;
+}
+
+.open {
+  position: relative;
+  transform: translateX(100%);
+  transition: transform 0.05s ease-in-out;
+}
+
+#box {
+  height: 100vh;
+  width: 30vw;
+  background-color: red;
+}
+
+.opened {
+  font-style: none;
+}
+
+.closed {
+  font-style: none;
+}
